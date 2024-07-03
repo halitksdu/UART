@@ -12,7 +12,7 @@ module uart_rx(
     always @(posedge clk, negedge reset) begin
         if(reset == 0) begin
             s_tick <= IDLE;
-            bit_counter <= 4'd0; // 8 bit eleman alýcaz
+            bit_counter <= 4'd0; // 8 bit eleman alÃ½caz
             d_ara <= 8'd0;
             deb_counter <= 10'd0;
             
