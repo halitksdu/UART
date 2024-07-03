@@ -36,7 +36,7 @@ module uart_top(
         end
     end
     
-    // ASCII "empty" ve "full" gönderme:    
+    // ASCII "empty" ve "full" gÃ¶nderme:    
     always @(full,empty) begin
         if (full == 1)       TX_in = 8'b0100_0110;      // ASCII F harfi 
         else if (empty == 1) TX_in = 8'b0100_0101;      // ASCII E harfi 
